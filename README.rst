@@ -6,7 +6,7 @@ This is a preliminary version of the `Vystadial 2013` acoustic data
 as a support for the paper submission for `LREC 2014`_.
 
 The abstract of the paper describing the data and related scripts is in the 
-file ``paper.pdf``.
+file ``abstract.pdf``.
 
 The data and scripts are found in directories as follows:
 

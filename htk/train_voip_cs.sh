@@ -9,7 +9,7 @@ set -e
 
 date
 
-echo "Training word internal triphone model for English"
+echo "Training word internal triphone model for Czech"
 echo ""
 echo "Environment variables:"
 echo "TRAIN_COMMON       = $TRAIN_COMMON"
