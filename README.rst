@@ -60,7 +60,11 @@ See ``LICENSE-APACHE-2.0.TXT``.
 Authors
 =======
 
-.. XXX This text is hidden during the review process.
+- Matěj Korvas
+- Ondřej Plátek
+- Ondřej Dušek
+- Lukáš Žilka
+- Filip Jurčíček
 
 
 .. `LREC 2014`_: http://lrec2014.lrec-conf.org/en/
