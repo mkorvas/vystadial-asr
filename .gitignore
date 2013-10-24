@@ -1,1 +1,5 @@
 /*.pdf
+*.sw[op]
+.sw[op]
+.history-*
+/data_voip_*
