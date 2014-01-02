@@ -15,12 +15,11 @@ Details
 -------
 * Our scripts prepare the data to the expected format in ``s5/data``.
 * Experiment files are stored to ``s5/exp``.
-* ``steps`` is a symlink to ``KALDI_ROOT/wsj/s5/utils``.
-* ``utils`` is a symlink to ``KALDI_ROOT/wsj/s5/utils``.
+* The symbolic links to ``KALDI_ROOT/wsj/s5/utils`` and ``KALDI_ROOT/wsj/s5/steps`` are automatically created.
 * The ``local`` directory contains scripts for data preparation to prepare 
   the ``s5/data`` structure.
-* ``path.sh``, ``cmd.sh`` and  ``conf/*`` contain configurations for the 
-  recipe.
+* The files ``path.sh``, ``cmd.sh`` and  ``conf/*`` 
+  contain configurations for the recipe.
 * Language model (LM) is either built from the training data using 
   [IRSTLM](http://sourceforge.net/projects/irstlm/)  or we supply one in 
   the ARPA format.
@@ -35,18 +34,13 @@ Before running the experiments, check that:
 * you have IRSTLM compiled. (This is needed for building a language model 
   unless you supply your own LM in the ARPA format.) See 
   http://sourceforge.net/projects/irstlm/.
-* the ``run.sh`` script will see the Kaldi binaries. There are two options 
-  to achieve this:
-
-  - Copy this directory into ``KALDI_ROOT/egs``. (Recommended)
-  - The Kaldi binaries are in your ``PATH`` variable and you fixed the 
-    ``utils`` and ``steps`` symlinks.
+* the ``run.sh`` script will see the Kaldi scripts and binaries.
+  Check for example that ``$KALDI_ROOT/egs/wsj/s5/utils/parse_options.sh`` is valid path. 
 * links in the ``conf`` directory point to the right data and that the 
   setup fits your needs.
-* the path to Kaldi binaries and the number of jobs, ``njobs``, are set 
-  correctly in ``path.sh``.
 * in ``cmd.sh``, you switched to run the training on a SGE[*] grid if 
-  required (disabled by default).
+  required (disabled by default) and 
+  ``njobs`` is less than number of your CPU cores.
 
 Start the recipe from the ``s5`` directory by running ``bash run.sh``.
 It will create ``mfcc``, ``data`` and ``exp`` directories.
