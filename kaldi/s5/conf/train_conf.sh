@@ -4,9 +4,8 @@
 export KALDI_ROOT=/ha/work/people/oplatek/kaldi
 
 # data_lang=en
-# export DATA_ROOT=`pwd`/../../data_voip_en
-data_lang=cs
-export DATA_ROOT=`pwd`/../../data_voip_cs
+data_lang=en
+export DATA_ROOT=`pwd`/../../data_voip_${data_lang}
 
 export test_sets="dev test"
 
