@@ -21,7 +21,7 @@ Details
 * The files ``path.sh``, ``cmd.sh`` and  ``conf/*`` 
   contain configurations for the recipe.
 * Language model (LM) is either built from the training data using 
-  [IRSTLM](http://sourceforge.net/projects/irstlm/)  or we supply one in 
+  `SRILM <www.speech.sri.com/projects/srilm/>`_  or we supply one in 
   the ARPA format.
 
 
