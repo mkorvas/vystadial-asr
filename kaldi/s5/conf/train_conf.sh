@@ -3,8 +3,7 @@
 # NEED TO BE SET
 export KALDI_ROOT=/ha/work/people/oplatek/kaldi
 
-# data_lang=en
-data_lang=en
+data_lang=cs  # alternatives en|cs
 export DATA_ROOT=`pwd`/../../data_voip_${data_lang}
 
 export test_sets="dev test"
